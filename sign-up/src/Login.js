@@ -40,15 +40,15 @@ class Login extends Component {
   render() {
     return (
       <div className="panel">
-         <form className="form-horizontal">
+         <form>
           <div className="control-group">
-            <label className="control-label" forhtml="inputEmail">Email address</label>
+            <label className="control-label" forhtml="inputEmail">Email address: </label>
             <div className="controls">
             <input  value={this.state.email} onChange={this.handleChange} type="text" id="inputEmail" placeholder="Enter email" />
             </div>
           </div>
           <div className="control-group">
-            <label className="control-label" forhtml="inputPassword">Password</label>
+            <label className="control-label" forhtml="inputPassword">Password: </label>
             <div className="controls">
               <input  value={this.state.password} onChange={this.handleChange} type="password" id="inputPassword" placeholder="Password" />
             </div>
