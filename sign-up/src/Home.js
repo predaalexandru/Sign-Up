@@ -8,6 +8,7 @@ class Home extends Component {
     }
 
 
+    //button that will log the user out
     logout() {
         fire.auth().signOut();
     }
