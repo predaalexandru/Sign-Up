@@ -40,27 +40,19 @@ class Login extends Component {
   render() {
     return (
       <div className="panel">
+      <div className="col-md-6">
          <form>
           <div className="control-group">
-            <label className="control-label" forhtml="inputEmail">Email address: </label>
-            <div className="controls">
-            <input  value={this.state.email} onChange={this.handleChange} type="text" id="inputEmail" placeholder="Enter email" />
+            <label forhtml="exEmail">Email address: </label>
+            <input  value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exEmail" aria-describedby="emailHelp" placeholder="Enter email" />
             </div>
-          </div>
           <div className="control-group">
-            <label className="control-label" forhtml="inputPassword">Password: </label>
-            <div className="controls">
-              <input  value={this.state.password} onChange={this.handleChange} type="password" id="inputPassword" placeholder="Password" />
+            <label forhtml="exPassword">Password: </label>
+            <input  value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exPassword" placeholder="Password" />
             </div>
-          </div>
-          <div className="control-group">
-            <div className="controls">
-            {/* <button type="submit" onClick={this.login} className="btn btn-primary">Login</button> */}
           <button onClick={this.signup} className="btn">Sign Up</button>
-          </div>
-          </div>
         </form> 
-    
+      </div>
       </div>
     );
   }

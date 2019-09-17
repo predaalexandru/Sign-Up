@@ -1,10 +1,13 @@
-body {
-    height: 100%;
-}
-
-.panel {
-    height: 100%;
-    display: flex;
+.panel, .titlu, .subtitlu {
     justify-content: center;
     align-items: center;
+    display: flex;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.subtitlu {
+    margin-bottom: 50px;
 }
